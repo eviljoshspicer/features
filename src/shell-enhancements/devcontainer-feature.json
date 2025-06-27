@@ -1,0 +1,32 @@
+{
+    "name": "Shell Enhancements",
+    "id": "shell-enhancements", 
+    "version": "1.0.0",
+    "description": "Adds useful shell aliases, functions, and productivity enhancements",
+    "options": {
+        "includeColorOutput": {
+            "type": "boolean",
+            "default": true,
+            "description": "Enable colorized output for ls, grep, and other commands"
+        },
+        "includeDirectoryAliases": {
+            "type": "boolean",
+            "default": true,
+            "description": "Include directory navigation shortcuts"
+        },
+        "includeDockerAliases": {
+            "type": "boolean",
+            "default": true,
+            "description": "Include Docker and Docker Compose shortcuts"
+        },
+        "shell": {
+            "type": "string",
+            "enum": ["bash", "zsh", "both"],
+            "default": "both",
+            "description": "Which shell to configure"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

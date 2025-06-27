@@ -1,0 +1,27 @@
+{
+    "scenarios": [
+        {
+            "name": "git-aliases with defaults",
+            "features": {
+                "git-aliases": {}
+            }
+        },
+        {
+            "name": "git-aliases with pretty log disabled",
+            "features": {
+                "git-aliases": {
+                    "includePrettyLog": false
+                }
+            }
+        },
+        {
+            "name": "git-aliases basic only",
+            "features": {
+                "git-aliases": {
+                    "includeAdvanced": false,
+                    "includePrettyLog": false
+                }
+            }
+        }
+    ]
+}

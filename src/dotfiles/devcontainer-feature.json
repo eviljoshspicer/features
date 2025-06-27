@@ -1,0 +1,37 @@
+{
+    "name": "Personal Dotfiles",
+    "id": "dotfiles",
+    "version": "1.0.0",
+    "description": "Clone and apply personal dotfiles from a Git repository",
+    "options": {
+        "repository": {
+            "type": "string",
+            "default": "",
+            "description": "Git repository URL containing your dotfiles (e.g., https://github.com/username/dotfiles.git)"
+        },
+        "targetPath": {
+            "type": "string", 
+            "default": "~/dotfiles",
+            "description": "Path where dotfiles repository will be cloned"
+        },
+        "installScript": {
+            "type": "string",
+            "default": "install.sh",
+            "description": "Name of the install script to run (relative to repository root)"
+        },
+        "symlinkDotfiles": {
+            "type": "boolean",
+            "default": true,
+            "description": "Automatically symlink common dotfiles (.bashrc, .zshrc, .gitconfig, etc.)"
+        },
+        "backupExisting": {
+            "type": "boolean",
+            "default": true,
+            "description": "Backup existing dotfiles before replacing them"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/git"
+    ]
+}

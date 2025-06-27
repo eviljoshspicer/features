@@ -1,0 +1,20 @@
+{
+    "scenarios": [
+        {
+            "name": "dotfiles without repository (should skip)",
+            "features": {
+                "dotfiles": {}
+            }
+        },
+        {
+            "name": "dotfiles with public repository",
+            "features": {
+                "dotfiles": {
+                    "repository": "https://github.com/microsoft/vscode-dev-containers.git",
+                    "targetPath": "~/test-dotfiles",
+                    "symlinkDotfiles": false
+                }
+            }
+        }
+    ]
+}

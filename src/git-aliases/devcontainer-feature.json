@@ -1,0 +1,22 @@
+{
+    "name": "Git Aliases & Shortcuts",
+    "id": "git-aliases",
+    "version": "1.0.0",
+    "description": "Installs useful git aliases and shortcuts for faster development workflow",
+    "options": {
+        "includeAdvanced": {
+            "type": "boolean",
+            "default": true,
+            "description": "Include advanced git aliases like interactive rebase shortcuts"
+        },
+        "includePrettyLog": {
+            "type": "boolean", 
+            "default": true,
+            "description": "Include pretty log formatting aliases"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/git"
+    ]
+}

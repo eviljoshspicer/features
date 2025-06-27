@@ -1,0 +1,37 @@
+{
+    "name": "Node.js Development Tools",
+    "id": "node-tools",
+    "version": "1.0.0", 
+    "description": "Installs popular Node.js development tools and package managers",
+    "options": {
+        "installPnpm": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install pnpm package manager"
+        },
+        "installYarn": {
+            "type": "boolean", 
+            "default": true,
+            "description": "Install Yarn package manager"
+        },
+        "installGlobalTools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install common global Node.js tools (nodemon, serve, etc.)"
+        },
+        "pnpmVersion": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version of pnpm to install"
+        },
+        "yarnVersion": {
+            "type": "string",
+            "default": "stable",
+            "description": "Version of Yarn to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/node"
+    ]
+}

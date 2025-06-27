@@ -1,0 +1,29 @@
+{
+    "scenarios": [
+        {
+            "name": "shell-enhancements with defaults",
+            "features": {
+                "shell-enhancements": {}
+            }
+        },
+        {
+            "name": "shell-enhancements bash only",
+            "features": {
+                "shell-enhancements": {
+                    "shell": "bash",
+                    "includeDockerAliases": false
+                }
+            }
+        },
+        {
+            "name": "shell-enhancements minimal",
+            "features": {
+                "shell-enhancements": {
+                    "includeColorOutput": false,
+                    "includeDirectoryAliases": false,
+                    "includeDockerAliases": false
+                }
+            }
+        }
+    ]
+}

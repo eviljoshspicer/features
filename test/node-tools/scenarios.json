@@ -1,0 +1,32 @@
+{
+    "scenarios": [
+        {
+            "name": "node-tools with defaults",
+            "features": {
+                "node": {},
+                "node-tools": {}
+            }
+        },
+        {
+            "name": "node-tools pnpm only",
+            "features": {
+                "node": {},
+                "node-tools": {
+                    "installYarn": false,
+                    "installGlobalTools": false
+                }
+            }
+        },
+        {
+            "name": "node-tools minimal",
+            "features": {
+                "node": {},
+                "node-tools": {
+                    "installPnpm": false,
+                    "installYarn": false,
+                    "installGlobalTools": false
+                }
+            }
+        }
+    ]
+}
