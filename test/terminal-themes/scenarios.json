@@ -1,0 +1,29 @@
+{
+    "scenarios": [
+        {
+            "name": "terminal-themes with defaults",
+            "features": {
+                "terminal-themes": {}
+            }
+        },
+        {
+            "name": "terminal-themes starship only",
+            "features": {
+                "terminal-themes": {
+                    "installOhMyZsh": false,
+                    "installNeofetch": false,
+                    "installPowerlineFonts": false
+                }
+            }
+        },
+        {
+            "name": "terminal-themes with custom theme",
+            "features": {
+                "terminal-themes": {
+                    "ohMyZshTheme": "agnoster",
+                    "autoStartNeofetch": true
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "name": "Code Quality Tools",
+    "id": "code-quality",
+    "version": "1.0.0",
+    "description": "Installs popular linting, formatting, and code quality tools",
+    "options": {
+        "installPrettier": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Prettier code formatter"
+        },
+        "installESLint": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install ESLint JavaScript linter"
+        },
+        "installBlack": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Black Python formatter"
+        },
+        "installFlake8": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Flake8 Python linter"
+        },
+        "installShellcheck": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Shellcheck shell script linter"
+        },
+        "installMarkdownlint": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install markdownlint for Markdown linting"
+        },
+        "installPreCommit": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install pre-commit hooks framework"
+        },
+        "installEditorConfig": {
+            "type": "boolean",
+            "default": true,
+            "description": "Create default .editorconfig file"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/python",
+        "ghcr.io/devcontainers/features/node"
+    ]
+}

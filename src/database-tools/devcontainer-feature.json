@@ -1,0 +1,46 @@
+{
+    "name": "Database CLI Tools",
+    "id": "database-tools",
+    "version": "1.0.0",
+    "description": "Installs popular database command-line tools and utilities",
+    "options": {
+        "installPostgreSQL": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install PostgreSQL client tools (psql, pg_dump, etc.)"
+        },
+        "installMySQL": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install MySQL client tools"
+        },
+        "installRedis": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Redis CLI tools"
+        },
+        "installMongoDB": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install MongoDB client tools"
+        },
+        "installSQLite": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install SQLite CLI tools"
+        },
+        "installDBeaver": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install DBeaver community edition (GUI tool)"
+        },
+        "installDataGrip": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install JetBrains DataGrip client tools"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

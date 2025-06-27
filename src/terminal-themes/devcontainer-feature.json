@@ -1,0 +1,41 @@
+{
+    "name": "Terminal Themes & Prompts",
+    "id": "terminal-themes",
+    "version": "1.0.0",
+    "description": "Installs beautiful terminal themes, prompts, and customizations",
+    "options": {
+        "installStarship": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Starship cross-shell prompt"
+        },
+        "installOhMyZsh": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Oh My Zsh framework"
+        },
+        "ohMyZshTheme": {
+            "type": "string",
+            "default": "robbyrussell",
+            "description": "Oh My Zsh theme to use"
+        },
+        "installPowerlineFonts": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Powerline fonts for better prompt display"
+        },
+        "installNeofetch": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install neofetch system info tool"
+        },
+        "autoStartNeofetch": {
+            "type": "boolean",
+            "default": false,
+            "description": "Automatically run neofetch on shell startup"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

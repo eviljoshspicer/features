@@ -1,0 +1,32 @@
+{
+    "scenarios": [
+        {
+            "name": "database-tools with defaults",
+            "features": {
+                "database-tools": {}
+            }
+        },
+        {
+            "name": "database-tools postgres only",
+            "features": {
+                "database-tools": {
+                    "installMySQL": false,
+                    "installRedis": false,
+                    "installMongoDB": false,
+                    "installSQLite": false
+                }
+            }
+        },
+        {
+            "name": "database-tools lightweight",
+            "features": {
+                "database-tools": {
+                    "installPostgreSQL": false,
+                    "installMySQL": false,
+                    "installRedis": false,
+                    "installMongoDB": false
+                }
+            }
+        }
+    ]
+}

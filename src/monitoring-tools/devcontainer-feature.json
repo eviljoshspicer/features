@@ -1,0 +1,51 @@
+{
+    "name": "System Monitoring Tools",
+    "id": "monitoring-tools",
+    "version": "1.0.0",
+    "description": "Installs system monitoring and performance analysis tools",
+    "options": {
+        "installHtop": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install htop process viewer"
+        },
+        "installBtop": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install btop++ modern resource monitor"
+        },
+        "installGlances": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install Glances cross-platform system monitor"
+        },
+        "installNettools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install network monitoring tools (netstat, ss, etc.)"
+        },
+        "installIotools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install I/O monitoring tools (iotop, iostat)"
+        },
+        "installCurl": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install curl and wget for network testing"
+        },
+        "installStress": {
+            "type": "boolean",
+            "default": false,
+            "description": "Install stress testing tools"
+        },
+        "installJq": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install jq JSON processor"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

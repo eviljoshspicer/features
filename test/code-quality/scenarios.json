@@ -1,0 +1,35 @@
+{
+    "scenarios": [
+        {
+            "name": "code-quality with defaults",
+            "features": {
+                "python": {},
+                "node": {},
+                "code-quality": {}
+            }
+        },
+        {
+            "name": "code-quality python only",
+            "features": {
+                "python": {},
+                "code-quality": {
+                    "installPrettier": false,
+                    "installESLint": false,
+                    "installMarkdownlint": false
+                }
+            }
+        },
+        {
+            "name": "code-quality minimal",
+            "features": {
+                "code-quality": {
+                    "installPrettier": false,
+                    "installESLint": false,
+                    "installBlack": false,
+                    "installFlake8": false,
+                    "installPreCommit": false
+                }
+            }
+        }
+    ]
+}

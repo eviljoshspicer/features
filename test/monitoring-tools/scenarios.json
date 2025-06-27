@@ -1,0 +1,32 @@
+{
+    "scenarios": [
+        {
+            "name": "monitoring-tools with defaults",
+            "features": {
+                "monitoring-tools": {}
+            }
+        },
+        {
+            "name": "monitoring-tools basic only",
+            "features": {
+                "monitoring-tools": {
+                    "installBtop": false,
+                    "installGlances": false,
+                    "installStress": false
+                }
+            }
+        },
+        {
+            "name": "monitoring-tools minimal",
+            "features": {
+                "monitoring-tools": {
+                    "installBtop": false,
+                    "installGlances": false,
+                    "installNettools": false,
+                    "installIotools": false,
+                    "installStress": false
+                }
+            }
+        }
+    ]
+}
