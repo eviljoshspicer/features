@@ -1,0 +1,17 @@
+{
+    "ascii_default": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "ascii-art": {}
+        }
+    },
+    "ascii_slant": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "ascii-art": {
+                "style": "slant",
+                "defaultText": "Test"
+            }
+        }
+    }
+}

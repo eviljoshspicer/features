@@ -1,0 +1,18 @@
+{
+    "shell_theme_default": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "shell-theme": {}
+        }
+    },
+    "shell_theme_powerline": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "shell-theme": {
+                "theme": "powerline",
+                "showGitInfo": true,
+                "showTime": true
+            }
+        }
+    }
+}

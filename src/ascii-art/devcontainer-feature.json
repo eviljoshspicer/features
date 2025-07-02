@@ -1,0 +1,28 @@
+{
+    "name": "ASCII Art Banner",
+    "id": "ascii-art",
+    "version": "1.0.0",
+    "description": "Generate beautiful ASCII art banners for your projects",
+    "options": {
+        "style": {
+            "type": "string",
+            "enum": [
+                "standard",
+                "slant",
+                "big",
+                "block",
+                "bubble"
+            ],
+            "default": "standard",
+            "description": "Choose the ASCII art style"
+        },
+        "defaultText": {
+            "type": "string",
+            "default": "DevContainer",
+            "description": "Default text to display when no argument is provided"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

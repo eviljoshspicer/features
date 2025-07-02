@@ -1,0 +1,24 @@
+{
+    "fortune_default": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "fortune": {}
+        }
+    },
+    "fortune_motivational": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "fortune": {
+                "category": "motivational"
+            }
+        }
+    },
+    "fortune_technical": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "fortune": {
+                "category": "technical"
+            }
+        }
+    }
+}

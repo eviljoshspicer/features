@@ -1,0 +1,22 @@
+{
+    "name": "Developer Fortune",
+    "id": "fortune",
+    "version": "1.0.0",
+    "description": "Daily motivational quotes and tips for developers",
+    "options": {
+        "category": {
+            "type": "string",
+            "enum": [
+                "motivational",
+                "technical",
+                "funny",
+                "mixed"
+            ],
+            "default": "mixed",
+            "description": "Choose the type of fortunes to display"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

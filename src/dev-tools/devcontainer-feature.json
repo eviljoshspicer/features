@@ -1,0 +1,31 @@
+{
+    "name": "Essential Dev Tools",
+    "id": "dev-tools",
+    "version": "1.0.0",
+    "description": "Install essential development tools and utilities",
+    "options": {
+        "includeJsonTools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install JSON processing tools (jq, fx)"
+        },
+        "includeNetworkTools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install network tools (curl, wget, httpie)"
+        },
+        "includeFileTools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install file tools (tree, bat, fd, ripgrep)"
+        },
+        "includeSystemTools": {
+            "type": "boolean",
+            "default": true,
+            "description": "Install system monitoring tools (htop, ncdu)"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Enhanced Shell Theme",
+    "id": "shell-theme", 
+    "version": "1.0.0",
+    "description": "Beautiful shell prompt with git integration and colors",
+    "options": {
+        "theme": {
+            "type": "string",
+            "enum": [
+                "minimal",
+                "powerline",
+                "git-focused",
+                "full"
+            ],
+            "default": "git-focused",
+            "description": "Choose the shell prompt theme"
+        },
+        "showGitInfo": {
+            "type": "boolean",
+            "default": true,
+            "description": "Show git branch and status in prompt"
+        },
+        "showTime": {
+            "type": "boolean",
+            "default": false,
+            "description": "Show current time in prompt"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

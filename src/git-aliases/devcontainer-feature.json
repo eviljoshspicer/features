@@ -1,0 +1,21 @@
+{
+    "name": "Git Power Aliases",
+    "id": "git-aliases",
+    "version": "1.0.0",
+    "description": "Install powerful git aliases and shortcuts for enhanced productivity",
+    "options": {
+        "includeAdvanced": {
+            "type": "boolean",
+            "default": true,
+            "description": "Include advanced git aliases (interactive rebase, etc.)"
+        },
+        "includeShortcuts": {
+            "type": "boolean", 
+            "default": true,
+            "description": "Include basic shortcut aliases (st, co, br, etc.)"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/git"
+    ]
+}

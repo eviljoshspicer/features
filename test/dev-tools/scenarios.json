@@ -1,0 +1,19 @@
+{
+    "dev_tools_default": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "dev-tools": {}
+        }
+    },
+    "dev_tools_minimal": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "dev-tools": {
+                "includeJsonTools": true,
+                "includeNetworkTools": false,
+                "includeFileTools": false,
+                "includeSystemTools": false
+            }
+        }
+    }
+}

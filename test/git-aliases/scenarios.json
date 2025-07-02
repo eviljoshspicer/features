@@ -1,0 +1,19 @@
+{
+    "git_aliases_default": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "git": {},
+            "git-aliases": {}
+        }
+    },
+    "git_aliases_shortcuts_only": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "git": {},
+            "git-aliases": {
+                "includeAdvanced": false,
+                "includeShortcuts": true
+            }
+        }
+    }
+}

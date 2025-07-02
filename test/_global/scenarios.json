@@ -3,10 +3,49 @@
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "color": {
-                "favorite": "purple"
+                "favorite": "green"
             },
             "hello": {
-                "greeting": "Greetings"
+                "greeting": "howdy"
+            }
+        }
+    },
+    "productivity_suite": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "git": {},
+            "fortune": {
+                "category": "technical"
+            },
+            "ascii-art": {
+                "style": "slant",
+                "defaultText": "DevBox"
+            },
+            "git-aliases": {
+                "includeAdvanced": true,
+                "includeShortcuts": true
+            },
+            "dev-tools": {
+                "includeJsonTools": true,
+                "includeNetworkTools": true,
+                "includeFileTools": true,
+                "includeSystemTools": false
+            },
+            "shell-theme": {
+                "theme": "git-focused",
+                "showGitInfo": true,
+                "showTime": false
+            }
+        }
+    },
+    "minimal_setup": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "fortune": {
+                "category": "motivational"
+            },
+            "ascii-art": {
+                "style": "minimal"
             }
         }
     }
